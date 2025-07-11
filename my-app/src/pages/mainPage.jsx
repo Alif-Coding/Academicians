@@ -4,8 +4,9 @@ export default function Mainpage() {
     
     
     return (
-        <div class="mainPage">
+        <>
+            <div class="mainPage">
             
-        </div>
-    )
+            </div>
+        </>)
 }
