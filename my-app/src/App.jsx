@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { createClient } from "@supabase/supabase-js";
-import Mainpage from "./pages/mainPage.jsx";
 import "./App.css";
+import Mainpage from "./pages/mainPage.jsx";
+import Lecturehall from "./components/lectureHall.jsx";
 
 // const supabase = createClient(
 //   import.meta.env.VITE_SUPABASE_URL,
@@ -31,10 +33,11 @@ function App() {
 //    </ul>
   console.log('✅ App component rendered');
   return (
-    <>
-      <Mainpage />
-    </>
-  );
-}
+    <Router>
+      <Routes>
+        <Route path="/" element={<Mainpage />} />
+        <Route path="/lecturehall" element={<Lecturehall />} />
+      </Routes>
+    </Router>);}
 
 export default App;

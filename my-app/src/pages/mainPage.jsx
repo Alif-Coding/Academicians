@@ -1,4 +1,6 @@
 import Split from "react-split";
+import { Link } from "react-router-dom";
+import Lecturehall from "../components/lectureHall";
 
 export default function Mainpage() {
   return (
@@ -22,9 +24,13 @@ export default function Mainpage() {
           </div>
           <div className="bg-white p-4 overflow-auto">
             <h1>Welcome To The Academy</h1>
-            <div class="h-35 w-80 bg-gray-200 rounded-lg">
-                
-            </div>
+            <Link to="/lecturehall">
+                <div class="h-35 w-80 bg-gray-200 rounded-lg">
+                    <h1>
+                        Lecture Hall
+                    </h1>
+                </div>
+            </Link>
           </div>
         </Split>
       </div>
