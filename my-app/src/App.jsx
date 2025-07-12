@@ -32,8 +32,7 @@ function App() {
 
   return (
     <>
-      <Mainpage>
-      </Mainpage>
+      <Mainpage></Mainpage>
     </>
   );
 }

@@ -8,7 +8,7 @@ function Mainpage() {
                 <div class="sidebar h-100 w-25">
                     
                 </div>
-                <Split class="mainPage">
+                <Split class="mainPage flex h-100">
                     <div class="hallWay">
                         <div>
                             
