@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { createClient } from "@supabase/supabase-js";
+import Mainpage from "./pages/mainPage";
 
 import "./App.css";
 
@@ -21,14 +22,18 @@ function App() {
     }
     setInstruments(data || []);
   }
+
+//<h1>hello</h1>
+//    <ul>
+//    {instruments.map((instrument) => (
+//    <li key={instrument.name}>{instrument.name}</li>
+//     ))}
+//    </ul>
+
   return (
     <>
-      <h1>hello</h1>
-      <ul>
-        {instruments.map((instrument) => (
-          <li key={instrument.name}>{instrument.name}</li>
-        ))}
-      </ul>
+      <Mainpage>
+      </Mainpage>
     </>
   );
 }
