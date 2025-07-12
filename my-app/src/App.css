@@ -1,1 +1,7 @@
 @import "tailwindcss";
+
+.split .gutter {
+  background-color: #ccc;
+  cursor: col-resize;
+  width: 50px
+}

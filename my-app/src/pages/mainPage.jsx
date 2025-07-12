@@ -1,33 +1,33 @@
-import Split from 'react-split';
+import Split from "react-split";
 
-function Mainpage() {
-    
-    return (
-        <>
-            <div class="h-100 w-100 bg-blue-950 m-0">
-                <div class="sidebar h-100 w-25">
-                    
-                </div>
-                <Split class="mainPage flex h-100">
-                    <div class="hallWay">
-                        <div>
-                            
-                        </div>
+export default function Mainpage() {
+  return (
+    <div className="flex h-screen">
+      {/* Sidebar */}
+      <div className="w-[80px] bg-blue-950 text-white p-4">
+        Sidebar
+      </div>
 
-                    </div>
-
-                    <div class="classRooms">
-                        <h1>
-                            Welcome To The Academy
-                        </h1>
-                        <div>
-
-                        </div>
-
-                    </div>
-                </Split>
+      {/* Main split content */}
+      <div className="flex-1">
+        <Split
+          className="flex h-full"
+          sizes={[40, 60]}
+          minSize={100}
+          gutterSize={10}
+        >
+          <div className="bg-gray-100 p-4 overflow-auto">
+            <h2>Hallway</h2>
+            
+          </div>
+          <div className="bg-white p-4 overflow-auto">
+            <h1>Welcome To The Academy</h1>
+            <div class="h-35 w-80 bg-gray-200 rounded-lg">
+                
             </div>
-        </>);
+          </div>
+        </Split>
+      </div>
+    </div>
+  );
 }
-
-export default Mainpage;
