@@ -1,7 +1,21 @@
 import { Link } from 'react-router-dom'
+import { useEffect, useRef } from "react"
+import anime from "animejs";
 
 function Landingpage() {
+
+    const boxRef = useRef(null);
     
+    useEffect(() => {
+    anime({
+      targets: boxRef.current,
+      translateX: 250,
+      duration: 1000,
+      easing: "easeOutQuad"
+    });
+  }, []);
+
+
     return(
         <>
             <div class="h-screen w-screen">
@@ -13,7 +27,7 @@ function Landingpage() {
                 </Link>
 
                 <div class="section-1 bg-slate-950 h-full w-full pt-40">
-                    <h1 class="font-serif text-[40px] text-white text-center">
+                    <h1 id="bigtitle" class="font-serif text-[40px] text-white text-center">
                         Academicians
                     </h1>
                     <p class="font-sans text-[20px] text-white text-center">
@@ -35,6 +49,7 @@ function Landingpage() {
                         education platform there is.<br></br>
                     </p>
                 </div>
+                <div ref={boxRef} style={{ width: 100, height: 100, background: "orange" }} />
                 <div>
 
                 </div>
