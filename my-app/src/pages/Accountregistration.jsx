@@ -6,10 +6,19 @@ function Registration() {
         <>
             <div class="registration">
                 <form>
+                    <label>
+                        Enter your username
+                    </label>
                     <input type="name" class="">
                     </input>
-                    <input type="password" class="">
+                    <label>
+                        Enter your email
+                    </label>
+                    <input type="email" class="">
                     </input>
+                    <label>
+                        Enter your password
+                    </label>
                     <input type="" class="">
                     </input>
                     <label>
