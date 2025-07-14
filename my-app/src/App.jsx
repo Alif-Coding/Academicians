@@ -6,6 +6,7 @@ import Mainpage from "./pages/mainPage.jsx";
 import Lecturehall from "./components/lectureHall.jsx";
 import HomeworkList from "./components/homework.jsx";
 import Landingpage from "./pages/landingPage.jsx";
+import Registration from "./pages/Accountregistration.jsx";
 
 // const supabase = createClient(
 //   import.meta.env.VITE_SUPABASE_URL,
@@ -41,6 +42,7 @@ function App() {
         <Route path="/mainpage" element={<Mainpage />} />
         <Route path="/lecturehall" element={<Lecturehall />} />
         <Route path="/homework" element={<HomeworkList />} />
+        <Route path="/Register" element={<Registration />} />
       </Routes>
     </Router>);}
 
