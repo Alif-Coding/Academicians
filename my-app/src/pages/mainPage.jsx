@@ -6,8 +6,20 @@ export default function Mainpage() {
   return (
     <div className="flex h-screen">
       {/* Sidebar */}
-      <div className="w-[80px] bg-blue-950 text-white p-4">
+      <div className="w-[150px] bg-blue-950 text-white p-4">
         Sidebar
+        <div class="h-[80px] w-[80px] bg-blue-100 text-slate-950 rounded-[20px] p-[20px] m-[10px]">
+            Settings
+        </div>
+        <div class="h-[80px] w-[80px] bg-blue-100 text-slate-950 rounded-[20px] p-[20px] m-[10px]">
+            Leaderboard
+        </div>
+        <div class="h-[80px] w-[80px] bg-blue-100 text-slate-950 rounded-[20px] p-[20px] m-[10px]">
+            Profile
+        </div>
+        <div class="h-[80px] w-[80px] bg-blue-100 text-slate-950 rounded-[20px] p-[20px] m-[10px]">
+            Clubs & Cliques
+        </div>
       </div>
 
       {/* Main split content */}
@@ -23,12 +35,17 @@ export default function Mainpage() {
             
           </div>
           <div className="bg-white p-4 overflow-auto">
-            <h1>Welcome To The Academy</h1>
+            <h1 classNam="text-white">Welcome To The Academy</h1>
             <Link to="/lecturehall">
-                <div class="h-35 w-80 bg-gray-200 rounded-lg">
+                <div class="h-80 w-full bg-gray-200 rounded-lg p-50">
                     <h1>
                         Lecture Hall
                     </h1>
+                </div>
+            </Link>
+            <Link to="/homeworks" >
+                <div class="homeworkButton h-60 w-60 bg-blue-900 rounded-[30px] mt-20">
+                  
                 </div>
             </Link>
           </div>
