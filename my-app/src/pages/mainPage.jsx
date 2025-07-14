@@ -44,8 +44,12 @@ export default function Mainpage() {
                 </div>
             </Link>
             <Link to="/homeworks" >
-                <div class="homeworkButton h-60 w-60 bg-blue-900 rounded-[30px] mt-20">
-                  
+                <div class="homeworkButton h-40 w-40 bg-blue-900 rounded-[30px] mt-20 absolute">
+                </div>
+            </Link>
+            <Link to="/">
+                <div class="library h-40 w-40 bg-green-100 rounded-[30px] mt-20 ml-60 absolute">
+
                 </div>
             </Link>
           </div>

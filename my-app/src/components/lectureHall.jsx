@@ -1,26 +1,49 @@
 import Split from 'react-split';
 
 export default function Lecturehall() {
-    
-    return(
-        <>
-            <div className="lectureHall h-screen w-screen bg-slate-700 p-10">
-                <h1 class="font-bold text-3xl text-center text-white pt-5">
-                    welcome to lecture hall 
-                </h1>
-                <div className="">
-                    <Split split="vertical" gutterSize={10} minSize={100}>
-                        <Split direction="horizontal" gutterSize={10} minSize={100}>
-                            <div className="displayBoard h-95 w-full bg-slate-800 rounded-[20px]">
-                            </div>
-                            <div className="students h-50 w-full bg-slate-900 rounded=[20px]">
-                            </div>
-                        </Split>
-                    <div class="chatbox h-100 w-25 bg-green-100">
-                    </div>
+    return (
+        <div className="lectureHall h-screen w-screen bg-slate-700 p-10">
+            <h1 className="font-bold text-3xl text-center text-white pt-5">
+                Welcome to Lecture Hall
+            </h1>
+
+            <div className="h-[90%] mt-8">
+                <Split
+                    className="flex h-full"
+                    sizes={[60, 40]}
+                    minSize={100}
+                    gutterSize={10}
+                >
+                    {/* Left Side (Board and Students stacked vertically) */}
+                    <Split
+                        direction="vertical"
+                        className="flex flex-col h-full w-full gap-4"
+                        sizes={[70, 30]}
+                        minSize={100}
+                        gutterSize={10}
+                    >
+                        {/* Display Board */}
+                        <div className="bg-slate-800 rounded-2xl w-full h-full p-4">
+                            <p className="text-white">Display Board</p>
+                        </div>
+
+                        {/* Students */}
+                        <div className="bg-slate-900 rounded-2xl w-full h-full p-4">
+                            <p className="text-white">Students</p>
+                        </div>
                     </Split>
-                </div>
+
+                    {/* Chatbox */}
+                    <div className="bg-green-100 rounded-2xl w-full h-full p-4">
+                        <p>Chatbox</p>
+                        <div class="w-full h-150">
+                            {/* where chat display */}
+                        </div>
+                        <input type="text" className="bg-white-250 w-full h-25 border-4 border-slate-300 rounded-2xl">
+                        </input>
+                    </div>
+                </Split>
             </div>
-        </>
-    )
+        </div>
+    );
 }
