@@ -35,6 +35,7 @@ function App() {
 //     ))}
 //    </ul>
   console.log('✅ App component rendered');
+
   return (
     <Router>
       <Routes>
@@ -44,6 +45,7 @@ function App() {
         <Route path="/homework" element={<HomeworkList />} />
         <Route path="/Register" element={<Registration />} />
       </Routes>
-    </Router>);}
+    </Router>);
+}
 
 export default App;
