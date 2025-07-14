@@ -39,7 +39,9 @@ export default function Lecturehall() {
                         <div class="w-full h-150">
                             {/* where chat display */}
                         </div>
-                        <input type="text" className="bg-white-250 w-full h-25 border-4 border-slate-300 rounded-2xl">
+                        <input type="text" className="bg-white-250 w-135 h-25 border-4 border-slate-300 rounded-2xl ml-2 mr-10">
+                        </input>
+                        <input type="button" className="bg-blue-250 w-25 h-25 border-4 border-slate-200 rounded-2xl">
                         </input>
                     </div>
                 </Split>
