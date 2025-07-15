@@ -9,12 +9,12 @@ export default function Navbar() {
                     Landing Page
                 </h1>
             </Link>
-            <Link to="/">
+            <Link to="/Pricing">
                 <h1 class="hover:text-blue-200">
                     Pricing
                 </h1>
             </Link>
-            <Link to="/">
+            <Link to="/Company">
                 <h1 class="hover:text-blue-200">
                     Company
                 </h1>
