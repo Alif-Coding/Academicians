@@ -58,10 +58,13 @@ function Landingpage() {
                     <div class="
                         bg-[url(https://s44783.pcdn.co/in/wp-content/uploads/sites/3/2022/03/How-to-Improve-Leadership-Skills.jpg.optimal.jpg)]
                         bg-no-repeat
-                        
+                        w-full
+                        h-full
+                        m-10
+                        absolute
                     ">
                     </div>
-                    <p>
+                    <p class="text-[20px] text-white ml-[1200px] absolute">
                         Students are expected to thrive in both the academia and industries
                     </p>
 

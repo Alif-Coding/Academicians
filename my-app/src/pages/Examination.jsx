@@ -1,8 +1,28 @@
 import { useEffect, useState } from "react"
 
 export default function Exam() {
-    
-    QuestionSets = [
+
+    EQQsets = [
+        {
+            Question: ``,
+            Options: [
+                {
+
+                },
+                {
+
+                },
+                {
+
+                },
+                {
+
+                },
+            ]
+        }
+    ]
+
+    SATQSets = [
         {
             Question: `The following text is from the 1913 story “The King's Coin” 
                         by Emily Pauline Johnson, a Kanienkahagen (Mohawk) writer 
@@ -68,11 +88,16 @@ export default function Exam() {
         },
     ]
 
-    function Evaluate() {
+    function Evaluate(ChosenOption, QuestionIndex, setScore) {
 
-
+        if (ChosenOption.Correct) {
+            setScore((prevScore) => prevScore + 1)
+        } else if (ChosenOption.Correct === false) {
+            setScore((prevScore) => prevScore - 1)
+        }
         return(
             <>
+
             </>
         )
     }
@@ -81,9 +106,14 @@ export default function Exam() {
         <>
             <div class="">
                 <div class="">
+                    
+                    <div onClick="Evaluate()">
+                        Evaluate
+                    </div>
+                </div>
+                <div>
 
                 </div>
             </div>
-        </>
-    )
-}
+        </>)
+    }
