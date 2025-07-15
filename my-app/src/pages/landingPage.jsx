@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import { useEffect, useRef } from "react"
-
+import Navbar from '../components/navbar.jsx'
 
 function Landingpage() {
 
@@ -26,6 +26,8 @@ function Landingpage() {
                         Sign Up
                     </div>
                 </Link>
+
+                <Navbar></Navbar>
 
                 <div class="section-1 bg-slate-950 h-full w-full pt-40">
                     <h1 id="bigtitle" class="font-serif text-[40px] text-white text-center">

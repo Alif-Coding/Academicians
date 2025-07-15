@@ -7,6 +7,8 @@ import Lecturehall from "./components/lectureHall.jsx";
 import HomeworkList from "./components/homework.jsx";
 import Landingpage from "./pages/landingPage.jsx";
 import Registration from "./pages/Accountregistration.jsx";
+import Exam from "./pages/Examination.jsx";
+import Company from "./pages/Company.jsx";
 
 // const supabase = createClient(
 //   import.meta.env.VITE_SUPABASE_URL,
@@ -44,6 +46,8 @@ function App() {
         <Route path="/lecturehall" element={<Lecturehall />} />
         <Route path="/homework" element={<HomeworkList />} />
         <Route path="/Register" element={<Registration />} />
+        <Route path="/Examination" element={<Exam />} />
+        <Route path="/Company" elemen={<Company />} />
       </Routes>
     </Router>);
 }
