@@ -22,8 +22,8 @@ function Landingpage() {
             <div class="h-screen w-screen">
 
                 <Link to="/Register">
-                    <div class="w-30 h-30 bg-blue-700/50 text-white text-center rounded-2xl p-6 m-10 fixed hover:bg-blue-700 ">
-                        Register now!
+                    <div class="w-30 h-15 bg-blue-700/50 text-white text-center rounded-2xl p-4 m-10 fixed hover:bg-blue-700 ">
+                        Sign Up
                     </div>
                 </Link>
 
