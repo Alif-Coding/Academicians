@@ -60,13 +60,16 @@ function Landingpage() {
                         bg-no-repeat
                         w-full
                         h-full
+                        rounded-xl
                         m-10
                         absolute
                     ">
                     </div>
-                    <p class="text-[20px] text-white ml-[1200px] absolute">
+                    <p class="text-[20px] text-white mt-[40px] ml-[1200px] absolute">
                         Students are expected to thrive in both the academia and industries
                     </p>
+                </div>
+                <div class="footer">
 
                 </div>
             </div>
