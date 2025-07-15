@@ -50,7 +50,20 @@ function Landingpage() {
                         education platform there is.<br></br>
                     </p>
                 </div>
-                <div>
+                <div class="section-3
+                    bg-slate-950
+                    w-full
+                    h-full
+                ">
+                    <div class="
+                        bg-[url(https://s44783.pcdn.co/in/wp-content/uploads/sites/3/2022/03/How-to-Improve-Leadership-Skills.jpg.optimal.jpg)]
+                        bg-no-repeat
+                        
+                    ">
+                    </div>
+                    <p>
+                        Students are expected to thrive in both the academia and industries
+                    </p>
 
                 </div>
             </div>
