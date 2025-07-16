@@ -25,6 +25,24 @@ function Pricing() {
                         
                     </div>
                 </div>
+                <div>
+                    <h1>
+                        Academic Success
+                    </h1>
+                    <p>
+                        500$
+                    </p>
+                    <div>
+                        <p>
+                            
+                        </p>
+                        <ol>
+                            <li>
+                                The
+                            </li>
+                        </ol>
+                    </div>
+                </div>
             </div>
         </>
     )
