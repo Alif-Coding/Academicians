@@ -8,18 +8,26 @@ export default function Mainpage() {
       {/* Sidebar */}
       <div className="w-[150px] bg-blue-950 text-white p-4">
         Sidebar
+        <Link to="/Settings">
         <div class="h-[80px] w-[80px] bg-blue-100 text-slate-950 rounded-[20px] p-[20px] m-[10px]">
             Settings
         </div>
+        </Link>
+        <Link to="/Leaderboard">
         <div class="h-[80px] w-[80px] bg-blue-100 text-slate-950 rounded-[20px] p-[20px] m-[10px]">
             Leaderboard
         </div>
+        </Link>
+        <Link to="/Profile">
+        </Link>
         <div class="h-[80px] w-[80px] bg-blue-100 text-slate-950 rounded-[20px] p-[20px] m-[10px]">
             Profile
         </div>
+        <Link to="/Clubs">
         <div class="h-[80px] w-[80px] bg-blue-100 text-slate-950 rounded-[20px] p-[20px] m-[10px]">
             Clubs & Cliques
         </div>
+        </Link>
       </div>
 
       {/* Main split content */}
