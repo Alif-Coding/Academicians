@@ -1,4 +1,5 @@
 import Split from 'react-split';
+import { supabase } from '../supabase-client.js'; 
 
 export default function Lecturehall() {
     return (
@@ -31,6 +32,11 @@ export default function Lecturehall() {
                         <div className="bg-slate-900 rounded-2xl w-full h-full p-4">
                             <p className="text-white">Students</p>
                         </div>
+                        <div className="">
+                            <h class="text-center ">Notes</h>
+                            <input type="textarea" class="w-full h-full" placeholder="Type your notes here ...">
+                            </input>
+                        </div>
                     </Split>
 
                     {/* Chatbox */}
@@ -42,6 +48,7 @@ export default function Lecturehall() {
                         <input type="text" className="bg-white-250 w-135 h-25 border-4 border-slate-300 rounded-2xl ml-2 mr-10">
                         </input>
                         <input type="button" className="bg-blue-250 w-25 h-25 border-4 border-slate-200 rounded-2xl">
+                            Send
                         </input>
                     </div>
                 </Split>
