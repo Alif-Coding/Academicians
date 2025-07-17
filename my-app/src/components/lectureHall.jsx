@@ -2,6 +2,17 @@ import Split from 'react-split';
 import { supabase } from '../supabase-client.js'; 
 
 export default function Lecturehall() {
+
+    function switch01(e) {
+        if (e.target.classList.contains("studentTab")) {
+            e.target.classList.add("active");
+            e.target.classList.remove("noteTab");
+        } else if (e.target.classList.contains("noteTab")) {
+            e.target.classList.add("active");
+            e.target.classList.remove("studentTab");
+        }
+    }
+ 
     return (
         <div className="lectureHall h-screen w-screen bg-slate-700 p-10">
             <h1 className="font-bold text-3xl text-center text-white pt-5">
@@ -29,11 +40,15 @@ export default function Lecturehall() {
                         </div>
 
                         {/* Students */}
-                        <div className="bg-slate-900 rounded-2xl w-full h-full p-4">
-                            <p className="text-white">Students</p>
+                        <div>
+                            <div onclick={switch01} className="studentTab bg-slate-900 rounded-2xl w-full h-full p-4">
+                                <p className="text-white">Students</p>
+                            </div>
+                            <div onclick={switch01} className="noteTab">
+                                <h class="text-center ">Notes</h>
+                            </div>
                         </div>
-                        <div className="">
-                            <h class="text-center ">Notes</h>
+                        <div>
                             <input type="textarea" class="w-full h-full" placeholder="Type your notes here ...">
                             </input>
                         </div>
