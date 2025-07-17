@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import { useState, FormEvent, ChangeEvent } from "react";
-import { supabase } from "./supabase-client"; 
+import { supabase } from "/src/supabase-client.js"; 
 
 function Registration() {
 
@@ -23,8 +23,7 @@ function Registration() {
         const { error } = await supabase.from("")
     }
 
-
-    const handleSubmit = async (e: FormEvent<FormElement>) => {
+    const handleSubmit = async (e) => {
         e.preventDefault()
 
         if (isSignUp) {
@@ -38,6 +37,10 @@ function Registration() {
             const {error: signInError} = await supabase.auth.signInWithPassword({
                 username, password
             })
+            if (signInError) {
+                console.error("Error signing in:", signInError.message)
+                return 
+            }
         }
         
     };
