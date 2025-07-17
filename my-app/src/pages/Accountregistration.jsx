@@ -1,8 +1,46 @@
 import { Link } from "react-router-dom";
+import { useState, FormEvent, ChangeEvent } from "react";
+import { supabase } from "./supabase-client"; 
 
 function Registration() {
 
-    
+    const [Account, setAccount] = useState({
+        student_name: "",
+        email: "",
+        password: "",
+        grade: "",
+
+    })
+
+    const [isSignUp, setIsSignUp] = useState(false);
+    const [email, setEmail] = useState("");
+    const [password, setPassword] = useState("");
+    const [username, setUsername] = useState("");
+    const [grade, setGrade] = useState("");
+
+
+    const fetchTasks = async () => {
+        const { error } = await supabase.from("")
+    }
+
+
+    const handleSubmit = async (e: FormEvent<FormElement>) => {
+        e.preventDefault()
+
+        if (isSignUp) {
+            const {error} = await supabase.auth.signUp({
+                username ,email, password, grade
+            }) 
+            if (signUpError) {
+                console.error("Error signing up:", error.message);
+            }
+        } else {
+            const {error: signInError} = await supabase.auth.signInWithPassword({
+                username, password
+            })
+        }
+        
+    };
 
     return(
         <>
