@@ -1,1 +1,19 @@
 @import "tailwindcss";
+
+
+.studentTab {
+    background-color: oklch(20.8% 0.042 265.755);
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+
+}
+
+.noteTab {
+    background-color: whitesmoke;
+    border-radius: 1rem;
+    width: 100%;
+    height: 100%;
+    padding: 1rem;
+}
