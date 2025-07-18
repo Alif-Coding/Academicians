@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import { createClient } from "@supabase/supabase-js";
 import "./App.css";
+
 import Mainpage from "./pages/mainPage.jsx";
 import Lecturehall from "./components/lectureHall.jsx";
 import HomeworkList from "./components/homework.jsx";
@@ -11,6 +12,9 @@ import Exam from "./pages/Examination.jsx";
 import Company from "./pages/Company.jsx";
 import Pricing from "./pages/Pricing.jsx";
 import Leaderboard from "./components/leaderboard.jsx";
+import Cliques from "./components/CliqueHall.jsx";
+import SelfProfile from "./components/ProfileSettings.jsx";
+import Navbar from "./components/navbar.jsx";
 
 // const supabase = createClient(
 //   import.meta.env.VITE_SUPABASE_URL,
@@ -52,6 +56,8 @@ function App() {
         <Route path="/Company" elemen={<Company />} />
         <Route path="/Pricing" element={<Pricing />} />
         <Route path="/Leaderboard" element={<Leaderboard />} />
+        <Route path="/Clubs" element={<Cliques />} />
+        <Route path="/Settings" element={<SelfProfile />} />
       </Routes>
     </Router>);
 }

@@ -48,26 +48,50 @@ function Registration() {
     return(
         <>
             <div class="registration h-screen w-screen bg-green-200">
-                <form class="h-[800px] w-[500px] bg-green-100 text-center rounded-2xl p-2 mt-4 ml-[40%] fixed">
-                    <label class="mt-4">
+                <form onSubmit={handleSubmit} class="h-[800px] w-[500px] bg-green-100 text-center rounded-2xl p-2 mt-4 ml-[40%] fixed">
+                    <label 
+                        class="mt-4">
                         Enter your username
                     </label><br></br>
-                    <input type="name" class="bg-white-100 border-2 border-black rounded-lg p-2 m-2">
+                    <input 
+                        type="name" 
+                        value={username} 
+                        onChange={(e => setUsername(e.target.value))}
+                        placeholder="Robert James Rallison" 
+                        class="bg-white-100 border-2 border-black rounded-lg p-2 m-2">
                     </input><br></br>
                     <label class="">
                         Enter your email
                     </label><br></br>
-                    <input type="email" class="bg-white-100 border-2 border-black rounded-lg p-2 m-2">
+                    <input 
+                        type="email" 
+                        value={email}
+                        onChange={(e => setUsername(e.target.value))}
+                        placeholder="Kwonhyun@gmail.com" 
+                        class="bg-white-100 border-2 border-black rounded-lg p-2 m-2">
                     </input><br></br>
                     <label>
                         Enter your password
                     </label><br></br>
-                    <input type="" class="bg-white-100 border-2 border-black rounded-lg p-2 m-2">
+                    <input 
+                        type="password" 
+                        value={password} 
+                        placeholder="Password" 
+                        class="bg-white-100 border-2 border-black rounded-lg p-2 m-2">
                     </input><br></br>
                     <label>
                         What's your current grade?
                     </label><br></br>
-                    <input type="number" class="bg-white-100 border-2 border-black rounded-lg p-2 m-2">
+                    <input 
+                        type="number"
+                        value={grade}
+                        onChange={(e => setGrade(e.target.value))}
+                        placeholder="12th Grade"
+                        class="bg-white-100 border-2 border-black rounded-lg p-2 m-2">
+                    </input>
+                    <input 
+                        type="submit"
+                        class="">
                     </input>
                 </form>
                 <Link to="/">
