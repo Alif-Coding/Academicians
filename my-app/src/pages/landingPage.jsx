@@ -106,7 +106,16 @@ function Landingpage() {
                     </p>
                 </div>
                 <div class="footer">
-
+                    <Link to="/Register">
+                        <p class="">
+                            Registration
+                        </p>
+                    </Link>
+                    <Link to="/">
+                        <p class="">
+                            
+                        </p>
+                    </Link>
                 </div>
             </div>
         </>
