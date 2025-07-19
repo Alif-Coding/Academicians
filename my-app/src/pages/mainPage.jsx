@@ -19,10 +19,10 @@ export default function Mainpage() {
         </div>
         </Link>
         <Link to="/Profile">
-        </Link>
         <div class="h-[80px] w-[80px] bg-blue-100 text-slate-950 rounded-[20px] p-[20px] m-[10px]">
             Profile
         </div>
+        </Link>
         <Link to="/Clubs">
         <div class="h-[80px] w-[80px] bg-blue-100 text-slate-950 rounded-[20px] p-[20px] m-[10px]">
             Clubs & Cliques

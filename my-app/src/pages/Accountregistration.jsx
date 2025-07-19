@@ -27,19 +27,42 @@ function Registration() {
         e.preventDefault()
 
         if (isSignUp) {
-            const {error} = await supabase.auth.signUp({
-                username ,email, password, grade
-            }) 
+            const {error: signUpError} = await supabase.auth.signUp({
+                email, password, 
+                options: {
+                    data: {
+                        username,
+                        grade
+                    }
+                }
+            })
+
             if (signUpError) {
                 console.error("Error signing up:", error.message);
+                return;
             }
+
+            if (!signUpError && signUpData.user) {
+                const { error: insertError } = await supabase
+                    .from()
+                    .insert({
+                        id: signUpData.user.id,
+                        username: username,
+                        grade: grade
+                    })
+            }
+
+            if (insertError) {
+                console.error('Failed to insert into profiles:', insertError.message);
+            }
+            
         } else {
             const {error: signInError} = await supabase.auth.signInWithPassword({
-                username, password
+                email, password
             })
             if (signInError) {
                 console.error("Error signing in:", signInError.message)
-                return 
+                return;
             }
         }
         
@@ -66,7 +89,7 @@ function Registration() {
                     <input 
                         type="email" 
                         value={email}
-                        onChange={(e => setUsername(e.target.value))}
+                        onChange={(e => setEmail(e.target.value))}
                         placeholder="Kwonhyun@gmail.com" 
                         class="bg-white-100 border-2 border-black rounded-lg p-2 m-2">
                     </input><br></br>
@@ -76,6 +99,7 @@ function Registration() {
                     <input 
                         type="password" 
                         value={password} 
+                        onChange={(e => setPassword(e.target.value))}
                         placeholder="Password" 
                         class="bg-white-100 border-2 border-black rounded-lg p-2 m-2">
                     </input><br></br>
@@ -90,7 +114,18 @@ function Registration() {
                         class="bg-white-100 border-2 border-black rounded-lg p-2 m-2">
                     </input>
                     <input 
-                        type="submit"
+                        type="button"
+                        onClick={() => {
+                            setIsSignUp(false)
+                        }}
+                        class="">
+                            Sign In
+                    </input>
+                    <input
+                        type="button"
+                        onClick={() => {
+                            setIsSignUp(true)
+                        }}
                         class="">
                     </input>
                 </form>

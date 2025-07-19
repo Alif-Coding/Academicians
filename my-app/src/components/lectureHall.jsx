@@ -41,10 +41,10 @@ export default function Lecturehall() {
 
                         {/* Students */}
                         <div>
-                            <div onclick={switch01} className="studentTab bg-slate-900 rounded-2xl w-full h-full p-4">
+                            <div onClick={switch01} className="studentTab bg-slate-900 rounded-2xl w-full h-full p-4">
                                 <p className="text-white">Students</p>
                             </div>
-                            <div onclick={switch01} className="noteTab">
+                            <div onClick={switch01} className="noteTab">
                                 <h class="text-center ">Notes</h>
                             </div>
                         </div>
