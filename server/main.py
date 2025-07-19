@@ -18,4 +18,5 @@ def read_root():
 async def process_Data(request: Request):
     body = await request.json()
     return {"result": body}
+
     
