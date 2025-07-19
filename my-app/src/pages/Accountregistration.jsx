@@ -26,8 +26,8 @@ function Registration() {
     const handleSubmit = async (e) => {
         e.preventDefault()
 
-        if (isSignUp) {
-            const {error: signUpError} = await supabase.auth.signUp({
+        if (!isSignUp) {
+            const {data: signUpData, error: signUpError} = await supabase.auth.signUp({
                 email, password, 
                 options: {
                     data: {
@@ -44,7 +44,7 @@ function Registration() {
 
             if (!signUpError && signUpData.user) {
                 const { error: insertError } = await supabase
-                    .from()
+                    .from("profiles")
                     .insert({
                         id: signUpData.user.id,
                         username: username,
@@ -127,6 +127,7 @@ function Registration() {
                             setIsSignUp(true)
                         }}
                         class="">
+                            Sign Up
                     </input>
                 </form>
                 <Link to="/">

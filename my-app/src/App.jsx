@@ -44,6 +44,18 @@ function App() {
 //    </ul>
   console.log('✅ App component rendered');
 
+  const [session, setSession] = useState(null)
+
+  const fetchSession = async () => {
+    const currentSession = await supabase.auth.getSession()
+    console.log(currentSession)
+    setSession(currentSession.data);
+  }
+
+  useEffect(() => {
+    
+  })
+
   return (
     <Router>
       <Routes>
