@@ -53,10 +53,14 @@ function App() {
   }
 
   useEffect(() => {
-    
-  })
+    fetchSession();
+  }, []);
 
   return (
+    <>
+    {
+      session ? <Mainpage /> : <Registration />
+    }
     <Router>
       <Routes>
         <Route path="/" element={<Landingpage />} />
@@ -71,7 +75,9 @@ function App() {
         <Route path="/Clubs" element={<Cliques />} />
         <Route path="/Settings" element={<SelfProfile />} />
       </Routes>
-    </Router>);
+    </Router>
+    </>
+    );
 }
 
 export default App;
