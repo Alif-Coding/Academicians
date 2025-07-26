@@ -40,14 +40,14 @@ export default function Lecturehall() {
               <div>
                 <div
                 onClick={() => setActivetab('participants')}
-                className={`studentTab bg-slate-900 rounded-2xl w-full h-full p-4 cursor-pointer ${activeTab === 'participants' ? 'border-2 border-white' : ''}`}
+                className={`studentTab bg-slate-900 rounded-2xl w-[200px] h-[40px] p-4 cursor-pointer ${activeTab === 'participants' ? 'border-2 border-white' : ''}`}
                 >
                   <p className="text-white">Students</p>
                 </div>
 
                 <div
                   onClick={() => setActivetab('Notes')}
-                  className={`noteTab bg-slate-900 rounded-2xl w-full h-full p-4 cursor-pointer ${activeTab === 'Notes' ? 'border-2 border-white' : ''}`}
+                  className={`noteTab bg-slate-900 rounded-2xl w-[200px] h-[40px] p-4 cursor-pointer ${activeTab === 'Notes' ? 'border-2 border-white' : ''}`}
                 >
                   <p className="text-black">Notes</p>
                 </div>
@@ -55,20 +55,22 @@ export default function Lecturehall() {
               <div>
                 { activeTab == 'participants' && 
                   <div>
-                    <p className="text-white">Students</p>
+                    <p className="text-white text-center">{/*numberOfstudents*/}Students</p>
                   </div>
                 }
                 {
                   activeTab == 'Notes' &&
-                  <div>
+                  <div class="">
                     <textarea 
                       className="w-full h-32 p-2 rounded-md bg-white" 
                       placeholder="Type your notes here..."></textarea>
-                    <div class="h-[40px] w-[50px] bg-blue">
+                    <div class="h-[40px] w-[200px] flex">
+                      <div class="h-[40px] w-[50px] bg-blue">
                       Save Note
-                    </div>
-                    <div class="h-[40px] w-[50px] bg-blue">
-                      Discard
+                      </div>
+                      <div class="h-[40px] w-[50px] bg-blue">
+                        Discard
+                      </div>
                     </div>
                   </div>
                 }
