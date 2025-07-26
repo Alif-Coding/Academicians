@@ -1,16 +1,13 @@
 import Split from "react-split";
-import { supabase } from "../supabase-client.js";
+import React, { useState, useEffect } from 'react';
 
 export default function Lecturehall() {
-  function switch01(e) {
-    if (e.target.classList.contains("studentTab")) {
-      e.target.classList.add("active");
-      e.target.classList.remove("noteTab");
-    } else if (e.target.classList.contains("noteTab")) {
-      e.target.classList.add("active");
-      e.target.classList.remove("studentTab");
-    }
-  }
+
+  const [activeTab, setActivetab] = useState("participants")
+
+  useEffect(() => {
+    console.log(`switched to ${activeTab} tab`)
+  }, [activeTab])
 
   return (
     <div className="lectureHall h-screen w-screen bg-slate-700 p-10">
@@ -40,22 +37,49 @@ export default function Lecturehall() {
 
             {/* Students */}
             <div>
-              <div
-                onClick={switch01}
-                className="studentTab bg-slate-900 rounded-2xl w-full h-full p-4"
-              >
-                <p className="text-white">Students</p>
+              <div>
+                <div
+                onClick={() => setActivetab('participants')}
+                className={`studentTab bg-slate-900 rounded-2xl w-full h-full p-4 cursor-pointer ${activeTab === 'participants' ? 'border-2 border-white' : ''}`}
+                >
+                  <p className="text-white">Students</p>
+                </div>
+
+                <div
+                  onClick={() => setActivetab('Notes')}
+                  className={`noteTab bg-slate-900 rounded-2xl w-full h-full p-4 cursor-pointer ${activeTab === 'Notes' ? 'border-2 border-white' : ''}`}
+                >
+                  <p className="text-black">Notes</p>
+                </div>
               </div>
-              <div onClick={switch01} className="noteTab">
-                <h class="text-center ">Notes</h>
+              <div>
+                { activeTab == 'participants' && 
+                  <div>
+                    <p className="text-white">Students</p>
+                  </div>
+                }
+                {
+                  activeTab == 'Notes' &&
+                  <div>
+                    <textarea 
+                      className="w-full h-32 p-2 rounded-md bg-white" 
+                      placeholder="Type your notes here..."></textarea>
+                    <div class="h-[40px] w-[50px] bg-blue">
+                      Save Note
+                    </div>
+                    <div class="h-[40px] w-[50px] bg-blue">
+                      Discard
+                    </div>
+                  </div>
+                }
               </div>
+                
+              
+              
+              
             </div>
             <div>
-              <input
-                type="textarea"
-                class="w-full h-full"
-                placeholder="Type your notes here ..."
-              ></input>
+              
             </div>
           </Split>
 
@@ -67,12 +91,11 @@ export default function Lecturehall() {
               type="text"
               className="bg-white-250 w-135 h-25 border-4 border-slate-300 rounded-2xl ml-2 mr-10"
             ></input>
-            <input
-              type="button"
+            <button
               className="bg-blue-250 w-25 h-25 border-4 border-slate-200 rounded-2xl"
             >
               Send
-            </input>
+            </button>
           </div>
         </Split>
       </div>
