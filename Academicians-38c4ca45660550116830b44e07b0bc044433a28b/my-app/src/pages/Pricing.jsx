@@ -25,7 +25,7 @@ function Pricing() {
                         
                     </div>
                 </div>
-                <div>
+                <div class="h-[800px] w-[500px] bg-yellow-200 text-center rounded-2xl p-2 mt-4 ml-[40px] ">
                     <h1>
                         Academic Success
                     </h1>

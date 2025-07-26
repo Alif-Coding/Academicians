@@ -20,7 +20,6 @@ function Landingpage() {
     return(
         <>
             <div class="h-screen w-screen">
-
                 <Link to="/Register">
                     <div 
                         class="w-30 
@@ -36,9 +35,7 @@ function Landingpage() {
                         Sign Up
                     </div>
                 </Link>
-
                 <Navbar></Navbar>
-
                 <div 
                     class="section-1 
                             bg-slate-950 
@@ -67,29 +64,29 @@ function Landingpage() {
                     bg-contain 
                     bg-[url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hammer_and_sickle.svg/250px-Hammer_and_sickle.svg.png)] 
                     bg-no-repeat 
-                    w-full 
-                    h-full
+                    w-screen
+                    h-screen
                     pt-10
                     ">
                     <p 
                         class="text-[40px] 
                                 text-yellow-300/100 
                                 ml-[1000px]">
-                        Our platform combines the social structure ingenuity of discord and khan academy's<br></br>
-                        passive teaching structures to develop the ultimate cost efficient high quality<br></br>
-                        education platform there is.<br></br>
+                        We perfected the art of applied machine learning and artificial intelligence into the learning process<br></br>
+                        by having a responsive Ai model to teach the students based on facial recognition data and general performance of students<br></br>
+                        In the platform<br></br>
                     </p>
                 </div>
                 <div class="section-3
                     bg-slate-950
-                    w-full
-                    h-full
+                    w-screen
+                    h-screen
                 ">
                     <div class="
                         bg-[url(https://s44783.pcdn.co/in/wp-content/uploads/sites/3/2022/03/How-to-Improve-Leadership-Skills.jpg.optimal.jpg)]
                         bg-no-repeat
-                        w-full
-                        h-full
+                        w-[1080px]
+                        h-[800px]
                         rounded-xl
                         m-10
                         absolute
@@ -102,15 +99,30 @@ function Landingpage() {
                             mt-[40px] 
                             ml-[1200px] 
                             absolute">
-                        Students are expected to thrive in both the academia and industries
+                        The platform combines the ingenuity of discord's social hierarchial navigation system for users to develop capable leaders
+                        in a digital world.
                     </p>
                 </div>
-                <div class="footer">
-                    <Link to="/Register">
-                        <p class="">
-                            Registration
-                        </p>
-                    </Link>
+                <div class="
+                        section-4
+                        bg-slate-900
+                        w-screen
+                        h-screen
+                        ">
+                    <div>
+
+                    </div>
+                </div>
+                <div class="footer h-[500px] w-screen bg-gray-900">
+                    <div class="absolute ml-[20px]">
+                        <Link to="/Register">
+                            <p class="">
+                                Registration
+                            </p>
+                        </Link>
+                    </div>
+
+                    
                     <Link to="/">
                         <p class="">
                             

@@ -1,4 +1,0 @@
-export const supabase = createClient(
-  "https://wkowxfqztitqqxzpfoqu.supabase.co",
-  "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Indrb3d4ZnF6dGl0cXF4enBmb3F1Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTE2MzY3MjAsImV4cCI6MjA2NzIxMjcyMH0.Q7tt2oiyeWuaQBcIfa7KglAjM_3v01zRj3Ap3LrlPPk"
-);
