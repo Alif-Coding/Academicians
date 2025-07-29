@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 export default function Navbar() {
 
     return(<>
-        <div className="h-16 text-[20px] text-blue-600 text-bold flex mt-[50px] left-1/2 -translate-x-1/2 absolute">
+        <div className="mainNavbar h-16 text-[20px] text-blue-600 text-bold flex mt-[50px] left-1/2 -translate-x-1/2 absolute">
             <Link to="/">
                 <h1 class="hover:text-blue-200 mr-[80px]">
                     Landing Page

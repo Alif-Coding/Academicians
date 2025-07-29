@@ -56,19 +56,190 @@ function Landingpage() {
                                 text-[20px] 
                                 text-white 
                                 text-center">
-                        a formal education platform supports the development of social hierarchal navigation and intellectual competitiveness and growth
+                        a formal education platform supports the development of <span class="hover:underline">social hierarchal navigation</span> and <span class="hover:underline">intellectual competitiveness and growth</span>
                     </p>
+                    <div class="
+                        flex
+                        mt-[80px]
+                    ">
+                        <div class="
+                            h-[200px] 
+                            w-[400px] 
+                            bg-white/80 
+                            rounded-2xl 
+                            mx-[50px]
+                            flex   
+                            hover:scale-105 transition duration-300 ease-in-out
+                            hover:bg-white">
+                            <div>
+                                
+                                <div class="
+                                bg-[url(https://cdn.myanimelist.net/r/200x268/images/characters/10/249647.jpg)]
+                                bg-contain
+                                bg-no-repeat
+                                w-[150px]
+                                h-[150px]
+                                mt-[20px]
+                                ml-[50px]
+                                
+                                ">
+
+                                </div>
+                                
+                            </div>
+                            <p class="font-serif mt-[20px]">
+                                <q>
+                                    This is peak
+                                </q>
+                                <h1 class="text-[20px] absolute">
+                                    -L Lawliet
+                                </h1>
+                            </p>
+                        </div>
+                        <div class="
+                            h-[200px] 
+                            w-[400px] 
+                            bg-white/80 
+                            rounded-2xl
+                            mx-[50px] 
+                            flex   
+                            hover:scale-105 transition duration-300 ease-in-out
+                            hover:bg-white">
+                            <div>
+                                <div class="
+                                bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNpJX56KK3otVu0tDkb3MmFQvLGgiLP0rm1A&s)]
+                                bg-contain
+                                bg-no-repeat
+                                w-[150px]
+                                h-[150px]
+                                mt-[20px]
+                                ml-[50px]
+                                
+                                "></div>
+                                
+                            </div>
+                                <p class="font-serif mt-[20px]">
+                                    <q>
+                                    The finest institution in nurturing master morality
+                                    </q>
+                                    <h1 class="text-[20px] absolute">
+                                        -Friedrich Nietzsche
+                                    </h1>
+                                </p>
+                        </div>
+                        <div class="
+                            h-[200px] 
+                            w-[400px] 
+                            bg-white/80 
+                            rounded-2xl
+                            mx-[50px] 
+                            flex   
+                            hover:scale-105 transition duration-300 ease-in-out
+                            hover:bg-white">
+                            <div>
+                                <div class="
+                                bg-[url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUG3hEUFgS3WXQ2x2CpfKHtWfgmi1IXDJsfg&s)]
+                                bg-contain
+                                bg-no-repeat
+                                w-[150px]
+                                h-[150px]
+                                mt-[20px]
+                                ml-[50px]
+                                
+                                "></div>
+                                
+                            </div>
+                                <p class="font-serif mt-[20px]">
+                                    <q>
+                                    Imprenetable for alieanation
+                                    </q>
+                                    <h1 class="text-[20px] absolute">
+                                        -Niccolo Machiavelli
+                                    </h1>
+                                </p>
+                        </div>
+                        <div class="
+                            h-[200px] 
+                            w-[400px] 
+                            bg-white/80 
+                            rounded-2xl
+                            mx-[50px] 
+                            flex   
+                            hover:scale-105 transition duration-300 ease-in-out
+                            hover:bg-white">
+                            <div>
+                                <div class="
+                                bg-[url(https://i.natgeofe.com/n/37c3c776-b8cb-4be1-988a-cf593c776b88/01-leonardo-da-vinci-book-talk.jpg)]
+                                bg-contain
+                                bg-no-repeat
+                                w-[150px]
+                                h-[150px]
+                                mt-[20px]
+                                ml-[50px]
+                                
+                                "></div>
+                                
+                            </div>
+                                <p class="font-serif mt-[20px]">
+                                    <q>
+                                    If i were to have children, i'd have them taken care of here ngl fr fr
+                                    </q>
+                                    <h1 class="text-[20px] absolute">
+                                        -Leonardo Da Vinci
+                                    </h1>
+                                </p>
+                        </div>
+                        <div class="
+                            h-[200px] 
+                            w-[400px] 
+                            bg-white/80 
+                            rounded-2xl
+                            mx-[50px] 
+                            flex   
+                            hover:scale-105 transition duration-300 ease-in-out
+                            hover:bg-white">
+                            <div>
+                                <div class="
+                                bg-[url(https://media.licdn.com/dms/image/v2/D4E03AQFWd9cuCZ0ZHQ/profile-displayphoto-shrink_800_800/B4EZVuvTbfGgAc-/0/1741319650519?e=1756944000&v=beta&t=mlEW_Y1c_UjQhfTFV4zmDkQyRYv4g-UOI72dbl00d0I)]
+                                bg-contain
+                                bg-no-repeat
+                                w-[150px]
+                                h-[150px]
+                                mt-[20px]
+                                ml-[50px]
+                                
+                                "></div>
+                                
+                            </div>
+                                <p class="font-serif mt-[20px]">
+                                    <q>
+                                    I'd let these guys raise my children ngl
+                                    </q>
+                                    <h1 class="text-[20px] absolute">
+                                        -Alif Kenzie Wibiyoso
+                                    </h1>
+                                </p>
+                        </div>
+                    </div>
+                    
                 </div>
                 <div 
                     class="section-2 
                     bg-red-700 
-                    bg-contain 
-                    bg-[url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hammer_and_sickle.svg/250px-Hammer_and_sickle.svg.png)] 
-                    bg-no-repeat 
                     w-screen
                     h-screen
                     pt-10
                     ">
+                    <div class="
+                        bg-[url(https://upload.wikimedia.org/wikipedia/commons/thumb/7/7e/Hammer_and_sickle.svg/250px-Hammer_and_sickle.svg.png)] 
+                        bg-contain
+                        w-[800px]
+                        h-[800px]
+                        rounded-2xl
+                        ml-[20px]
+                        absolute
+                        bg-no-repeat">
+                    </div>
                     <p 
                         class="text-[40px] 
                                 text-yellow-300/100 
@@ -100,8 +271,8 @@ function Landingpage() {
                         class="
                             text-[20px] 
                             text-white 
-                            mt-[40px] 
-                            ml-[1200px] 
+                            mt-[400px] 
+                            ml-[1000px] 
                             absolute">
                         The platform combines the ingenuity of discord's social hierarchial navigation system for users to develop capable leaders
                         in a digital world.

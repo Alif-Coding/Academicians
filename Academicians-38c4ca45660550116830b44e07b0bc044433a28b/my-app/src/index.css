@@ -22,4 +22,12 @@
 
 @media (width <= 768px ) {
     
+    /*landing page open*/
+    .mainNavbar {
+        flex-wrap: wrap;
+        
+    }
+
+    /*landing page close*/
+
 }
