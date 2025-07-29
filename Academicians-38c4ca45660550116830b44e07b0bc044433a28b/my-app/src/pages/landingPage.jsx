@@ -123,7 +123,8 @@ function Landingpage() {
                                     The finest institution in nurturing master morality
                                     </q>
                                     <h1 class="text-[20px] absolute">
-                                        -Friedrich Nietzsche
+                                        -Friedrich<br></br>  
+                                        Nietzsche
                                     </h1>
                                 </p>
                         </div>
@@ -154,7 +155,8 @@ function Landingpage() {
                                     Imprenetable for alieanation
                                     </q>
                                     <h1 class="text-[20px] absolute">
-                                        -Niccolo Machiavelli
+                                        -Niccolo<br></br>  
+                                        Machiavelli
                                     </h1>
                                 </p>
                         </div>
@@ -216,7 +218,8 @@ function Landingpage() {
                                     I'd let these guys raise my children ngl
                                     </q>
                                     <h1 class="text-[20px] absolute">
-                                        -Alif Kenzie Wibiyoso
+                                        -Alif Kenzie<br></br> 
+                                        Wibiyoso
                                     </h1>
                                 </p>
                         </div>
