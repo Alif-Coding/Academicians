@@ -20,7 +20,7 @@ function Landingpage() {
     return(
         <>
             <div class="h-screen w-screen">
-                <Link to="/Register">
+                <Link to="/Register" >
                     <div 
                         class="w-30 
                                 h-15 
@@ -30,6 +30,7 @@ function Landingpage() {
                                 rounded-2xl 
                                 p-4 
                                 m-10 
+                                z-10
                                 fixed 
                                 hover:bg-blue-700 ">
                         Sign Up
@@ -85,11 +86,14 @@ function Landingpage() {
                     <div class="
                         bg-[url(https://s44783.pcdn.co/in/wp-content/uploads/sites/3/2022/03/How-to-Improve-Leadership-Skills.jpg.optimal.jpg)]
                         bg-no-repeat
-                        w-[1080px]
-                        h-[800px]
-                        rounded-xl
-                        m-10
+                        bg-cover
+                        w-[700px]
+                        h-[400px]
+                        rounded-2xl
+                        mt-[300px]
+                        ml-[100px]
                         absolute
+                        overflow-hidden
                     ">
                     </div>
                     <p 
