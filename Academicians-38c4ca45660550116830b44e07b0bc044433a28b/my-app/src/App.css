@@ -5,3 +5,18 @@
   cursor: col-resize;
   width: 50px
 }
+
+@keyframes spin-carousel {
+    0% {
+      transform: rotateY(0deg);
+    }
+    100% {
+      transform: rotateY(360deg);
+    }
+  }
+
+.carousel-spin {
+  animation: spin-carousel 8s linear infinite;
+  transform-style: preserve-3d;
+}
+

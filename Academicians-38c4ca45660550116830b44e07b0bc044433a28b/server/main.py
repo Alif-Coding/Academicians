@@ -1,5 +1,12 @@
 from fastapi import FastAPI, Request
 from fastapi.middleware.cors import CORSMiddleware
+from deepface import DeepFace
+
+
+
+def FER():
+    result = DeepFace.analyze(img_path = "student.jpg", actions = ['emotion'])
+    print(result[0]["emotion"])
 
 app = FastAPI()
 

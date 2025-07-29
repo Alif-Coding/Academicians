@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import { Swiper, SwiperSlide } from 'swiper/react';
 import { useEffect, useRef } from "react"
 import Navbar from '../components/navbar.jsx'
 
@@ -62,6 +63,8 @@ function Landingpage() {
                         flex
                         mt-[80px]
                     ">
+                    <Swiper>
+                        <SwiperSlide>
                         <div class="
                             h-[200px] 
                             w-[400px] 
@@ -96,6 +99,8 @@ function Landingpage() {
                                 </h1>
                             </p>
                         </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
                         <div class="
                             h-[200px] 
                             w-[400px] 
@@ -128,6 +133,8 @@ function Landingpage() {
                                     </h1>
                                 </p>
                         </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
                         <div class="
                             h-[200px] 
                             w-[400px] 
@@ -160,6 +167,8 @@ function Landingpage() {
                                     </h1>
                                 </p>
                         </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
                         <div class="
                             h-[200px] 
                             w-[400px] 
@@ -191,6 +200,8 @@ function Landingpage() {
                                     </h1>
                                 </p>
                         </div>
+                        </SwiperSlide>
+                        <SwiperSlide>
                         <div class="
                             h-[200px] 
                             w-[400px] 
@@ -223,6 +234,8 @@ function Landingpage() {
                                     </h1>
                                 </p>
                         </div>
+                        </SwiperSlide>
+                        </Swiper>
                     </div>
                     
                 </div>
@@ -293,7 +306,7 @@ function Landingpage() {
                 <div class="footer h-[500px] w-screen bg-gray-900">
                     <div class="absolute ml-[20px]">
                         <Link to="/Register">
-                            <p class="">
+                            <p class="text-white text-[25px]">
                                 Registration
                             </p>
                         </Link>
