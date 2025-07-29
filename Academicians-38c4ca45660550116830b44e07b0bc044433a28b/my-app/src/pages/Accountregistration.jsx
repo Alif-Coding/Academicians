@@ -110,15 +110,14 @@ function Registration() {
             placeholder="12th Grade"
             class="bg-white-100 border-2 border-black rounded-lg p-2 m-2"
           ></input>
-          <input
-            type="button"
+          <button
             onClick={() => {
               setIsSignUp(false);
             }}
             class=""
           >
             Sign In
-          </input>
+          </button>
           <input
             type="button"
             onClick={() => {

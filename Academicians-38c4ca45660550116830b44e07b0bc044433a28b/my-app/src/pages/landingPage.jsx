@@ -110,7 +110,6 @@ function Landingpage() {
                         h-screen
                         ">
                     <div>
-
                     </div>
                 </div>
                 <div class="footer h-[500px] w-screen bg-gray-900">
@@ -121,8 +120,6 @@ function Landingpage() {
                             </p>
                         </Link>
                     </div>
-
-                    
                     <Link to="/">
                         <p class="">
                             
