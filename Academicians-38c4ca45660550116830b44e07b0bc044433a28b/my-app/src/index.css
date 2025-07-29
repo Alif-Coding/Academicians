@@ -17,3 +17,9 @@
     height: 100%;
     padding: 1rem;
 }
+
+/*web-responsiveness*/
+
+@media (width <= 768px ) {
+    
+}

@@ -46,7 +46,7 @@ function Landingpage() {
                     <h1 
                         id="bigtitle" 
                         class="font-serif 
-                                text-[40px] 
+                                text-[80px] 
                                 text-white 
                                 text-center">
                         Academicians

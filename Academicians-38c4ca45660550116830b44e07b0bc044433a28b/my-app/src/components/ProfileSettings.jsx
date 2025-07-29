@@ -3,8 +3,12 @@ export default function SelfProfile() {
     
     return(
         <>
-            <div>
-                
+            <div class="">
+                <div>
+                    <div>
+                        
+                    </div>
+                </div>
             </div>
         </>
     )
