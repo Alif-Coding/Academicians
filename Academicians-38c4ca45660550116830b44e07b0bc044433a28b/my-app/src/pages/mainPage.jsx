@@ -39,13 +39,20 @@ export default function Mainpage() {
           gutterSize={10}
         >
           <div className="bg-gray-100 p-4 overflow-auto">
-            <h2>Hallway</h2>
-            <div>
-              
-            </div>
+            <h2 class="text-[40px]">Hallway</h2>
+            <Link to="/Clubstruct">
+              <div class="h-[400px] 
+                          w-[400px] 
+                          rounded-2xl
+                          bg-contain
+                          bg-no-repeat
+                          bg-[url(https://play-lh.googleusercontent.com/iIzqTKnI-DPO4uzSNZKZj7DZiO81c2jIOYD4XDJqXntvTT0Yx25l0LrLZ0anu1hTQOQ1)]">
+                
+              </div>
+            </Link>
           </div>
           <div className="bg-white p-4 overflow-auto">
-            <h1 classNam="text-white">Welcome To The Academy</h1>
+            <h1 className="text-[40px]">Welcome To The Academy</h1>
             <Link to="/lecturehall">
                 <div class="h-80 w-full bg-gray-200 rounded-lg p-50">
                     <h1>

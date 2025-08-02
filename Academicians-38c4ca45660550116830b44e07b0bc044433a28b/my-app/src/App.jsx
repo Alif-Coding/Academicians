@@ -74,7 +74,7 @@ function App() {
         <Route path="/Leaderboard" element={<Leaderboard />} />
         <Route path="/Clubs" element={<Cliques />} />
         <Route path="/Settings" element={<SelfProfile />} />
-        <Route path="/Chatstruct" element={<Chatstruct />}
+        <Route path="/Chatsys" element={<Clubstruct />} />
       </Routes>
     </div>
   );
