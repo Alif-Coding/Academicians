@@ -16,6 +16,7 @@ import Cliques from "./components/CliqueHall.jsx";
 import SelfProfile from "./components/ProfileSettings.jsx";
 import Navbar from "./components/navbar.jsx";
 import Clubstruct from './components/chatprototype.jsx'
+import Library from "./components/library.jsx";
 
 const supabase = createClient(
   import.meta.env.VITE_SUPABASE_URL,
@@ -75,6 +76,7 @@ function App() {
         <Route path="/Clubs" element={<Cliques />} />
         <Route path="/Settings" element={<SelfProfile />} />
         <Route path="/Chatsys" element={<Clubstruct />} />
+        <Route path="/Library" element={<Library />} />
       </Routes>
     </div>
   );

@@ -47,7 +47,6 @@ export default function Mainpage() {
                           bg-contain
                           bg-no-repeat
                           bg-[url(https://play-lh.googleusercontent.com/iIzqTKnI-DPO4uzSNZKZj7DZiO81c2jIOYD4XDJqXntvTT0Yx25l0LrLZ0anu1hTQOQ1)]">
-                
               </div>
             </Link>
           </div>
@@ -61,12 +60,12 @@ export default function Mainpage() {
                 </div>
             </Link>
             <Link to="/homeworks" >
-                <div class="homeworkButton h-40 w-40 bg-blue-900 rounded-[30px] text-center pt-15 mt-20 absolute">
+                <div class="homeworkButton h-40 w-40 bg-blue-900 rounded-[30px] text-white text-center pt-15 mt-20 absolute">
                   Homeworks
                 </div>
             </Link>
             <Link to="/">
-                <div class="library h-40 w-40 bg-green-100 rounded-[30px] text-center p-15 mt-20 ml-60 absolute">
+                <div class="library h-40 w-40 bg-green-900 rounded-[30px] text-white text-center p-15 mt-20 ml-60 absolute">
                   Library
                 </div>
             </Link>
