@@ -40,7 +40,9 @@ export default function Mainpage() {
         >
           <div className="bg-gray-100 p-4 overflow-auto">
             <h2>Hallway</h2>
-            
+            <div>
+              
+            </div>
           </div>
           <div className="bg-white p-4 overflow-auto">
             <h1 classNam="text-white">Welcome To The Academy</h1>

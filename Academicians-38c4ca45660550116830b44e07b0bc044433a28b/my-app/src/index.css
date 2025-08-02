@@ -1,6 +1,5 @@
 @import "tailwindcss";
 
-
 .studentTab {
     background-color: oklch(20.8% 0.042 265.755);
     border-radius: 1rem;
@@ -25,7 +24,7 @@
     /*landing page open*/
     .mainNavbar {
         flex-wrap: wrap;
-        
+
     }
 
     /*landing page close*/

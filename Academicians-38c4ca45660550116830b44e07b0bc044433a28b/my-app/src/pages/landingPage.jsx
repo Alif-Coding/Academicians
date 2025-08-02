@@ -63,8 +63,6 @@ function Landingpage() {
                         flex
                         mt-[80px]
                     ">
-                    <Swiper>
-                        <SwiperSlide>
                         <div class="
                             h-[200px] 
                             w-[400px] 
@@ -99,8 +97,6 @@ function Landingpage() {
                                 </h1>
                             </p>
                         </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
                         <div class="
                             h-[200px] 
                             w-[400px] 
@@ -133,8 +129,6 @@ function Landingpage() {
                                     </h1>
                                 </p>
                         </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
                         <div class="
                             h-[200px] 
                             w-[400px] 
@@ -167,8 +161,6 @@ function Landingpage() {
                                     </h1>
                                 </p>
                         </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
                         <div class="
                             h-[200px] 
                             w-[400px] 
@@ -200,8 +192,6 @@ function Landingpage() {
                                     </h1>
                                 </p>
                         </div>
-                        </SwiperSlide>
-                        <SwiperSlide>
                         <div class="
                             h-[200px] 
                             w-[400px] 
@@ -234,8 +224,6 @@ function Landingpage() {
                                     </h1>
                                 </p>
                         </div>
-                        </SwiperSlide>
-                        </Swiper>
                     </div>
                     
                 </div>
