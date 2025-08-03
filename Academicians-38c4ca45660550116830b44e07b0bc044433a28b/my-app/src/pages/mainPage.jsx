@@ -40,6 +40,7 @@ export default function Mainpage() {
         >
           <div className="bg-gray-100 p-4 overflow-auto">
             <h2 class="text-[40px]">Hallway</h2>
+
             <Link to="/Clubstruct">
               <div class="h-[400px] 
                           w-[400px] 
@@ -49,6 +50,7 @@ export default function Mainpage() {
                           bg-[url(https://play-lh.googleusercontent.com/iIzqTKnI-DPO4uzSNZKZj7DZiO81c2jIOYD4XDJqXntvTT0Yx25l0LrLZ0anu1hTQOQ1)]">
               </div>
             </Link>
+            
           </div>
           <div className="bg-white p-4 overflow-auto">
             <h1 className="text-[40px]">Welcome To The Academy</h1>
@@ -64,7 +66,7 @@ export default function Mainpage() {
                   Homeworks
                 </div>
             </Link>
-            <Link to="/">
+            <Link to="/Library">
                 <div class="library h-40 w-40 bg-green-900 rounded-[30px] text-white text-center p-15 mt-20 ml-60 absolute">
                   Library
                 </div>
