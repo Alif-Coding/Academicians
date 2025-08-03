@@ -41,10 +41,10 @@ export default function Mainpage() {
           <div className="bg-gray-100 p-4 overflow-auto">
             <h2 class="text-[40px]">Hallway</h2>
 
-            <Link to="/Clubstruct">
+            <Link to="/Chatsys">
               <div class="h-[400px] 
                           w-[400px] 
-                          rounded-2xl
+                          rounded-[60px]
                           bg-contain
                           bg-no-repeat
                           bg-[url(https://play-lh.googleusercontent.com/iIzqTKnI-DPO4uzSNZKZj7DZiO81c2jIOYD4XDJqXntvTT0Yx25l0LrLZ0anu1hTQOQ1)]">

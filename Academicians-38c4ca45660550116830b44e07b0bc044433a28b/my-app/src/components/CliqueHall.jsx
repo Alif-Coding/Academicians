@@ -3,8 +3,11 @@ export default function Cliques() {
     
     return(
         <>
-            <div>
-                
+            <div class="">
+                <div class="">
+                </div>
+                <div class="">
+                </div>
             </div>
         </>)
 }
