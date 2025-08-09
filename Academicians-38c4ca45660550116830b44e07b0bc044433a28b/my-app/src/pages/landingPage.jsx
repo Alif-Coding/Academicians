@@ -288,7 +288,10 @@ function Landingpage() {
                         w-screen
                         h-screen
                         ">
-                    <div>
+                    <div class="">
+                        <h1 class="text-white">
+                            Tuition fee reductions are offered based on the student's personal progress
+                        </h1>
                     </div>
                 </div>
                 <div class="footer h-[500px] w-screen bg-gray-900">
